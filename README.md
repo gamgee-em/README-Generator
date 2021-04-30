@@ -8,9 +8,9 @@ CL Application that assists the user in creating a professional README file for 
 * [Installation](#installation)
 * [Usage](#usage)
 * [Tests](#tests)
-* [ScreenShot](#screenshot)
 * [License](#license)
 * [Badges](#badges)
+* [ScreenShot](#screenshot)
 * [Contributors](#contributors)
 * [Contact Information](#questions)
 * [Demo](#demo)
@@ -37,7 +37,7 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## __Badges__
-![License: MIT](https://img.shields.io/badge/License-MIT-hotpink.svg))
+![License: MIT](https://img.shields.io/badge/License-MIT-hotpink.svg)
 
 ## __ScreenShot__
 ![Screenshot of Application](./assets/images/readme-generator-ss.png)
@@ -51,4 +51,6 @@ If you would like to contribute to the project please contact me below:
 * [E-mail](mailto:samuel.sweigart@gmail.com)
 
 ## __Demo__
-![Application Demo](link to image / GIF)
+[Full Demo](https://drive.google.com/file/d/1Kka731yTf5lrtJ5ZaAdOoe9Ws9gWWk0U/view?usp=sharing)
+
+![Application Demo](./assets/gifs/readme-demo.gif)
