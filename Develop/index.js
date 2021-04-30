@@ -4,6 +4,7 @@ const { Console } = require('console');
 const fs = require('fs');
 const inquirer = require('inquirer');
 const { title } = require('process');
+//const mitLicense = ``;
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -24,12 +25,27 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Please enter your GitHub username:',
+        message: 'Please explain the usage of your application:',
+        name: 'usage'
+    },
+    {
+        type: 'input',
+        message: 'Please enter file path to image to display Screenshot of application:',
+        name: 'image'
+    },
+    {
+        type: 'input',
+        message: 'Please list all contributors to the project:',
+        name: 'contributors'
+    },
+    {
+        type: 'input',
+        message: 'Enter your GitHub address where potential contributors/users can contact you with questions regarding your repo:',
         name: 'github'
     },
     {
         type: 'input',
-        message: 'Enter a valid e-mail where potential contributors can contact you with questions regarding your repo:',
+        message: 'Enter a valid e-mail where potential contributors/users can contact you with questions regarding your repo:',
         name: 'email'
     }
 ];
@@ -37,12 +53,10 @@ const questions = [
 const getAnswers = (answers) => {
     inquirer.prompt(questions, answers)
         .then((response) => {
-            console.log(response);
             //writeToFile(response);
             renderMarkUp(response);
     });
 };
-
 
 
 
@@ -51,35 +65,44 @@ const markUp = `
 # **${response.projectTitle}**
 
 ## **Description**
-* ${response.description}
+${response.description}
 
-## Table of Contents
+## **Table of Contents**
 
 * Installation(#installation)
 * Usage(#usage)
 * Credits(#credits)
 * License(#license)
+* Contributors
+* Contact Information
 
-## Installation
-* ${response.installation}
+## **Installation**
+\`\`\`
+${response.installation}
+\`\`\`
 
-## Usage
-* ${response.usage}
+## **Usage**
+${response.usage}
 
-## ScreenShot
-${response.screenshot}
+## **ScreenShot**
+![Screenshot of Application](${response.image})
 
-## Licence
+## **Licence**
+![License: MIT](https://img.shields.io/badge/License-MIT-hotpink.svg)
 
-## Contributing
+## **Contributors**
+${response.contributors}
 
-## Tests
+## **Tests**
 
-## Questions
+## **Questions**
 
-If you would like to contribute to the project please contact me @ 
+If you would like to contribute to the project please contact me below: 
 * [GitHub](https://github.com/${response.github})
 * [Email](mailto:${response.email})
+
+## **Demo**
+
 ` 
 writeToFile(markUp);
 };

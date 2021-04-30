@@ -1,33 +1,42 @@
 
-# **Readme.md**
+# **Readme file Generator**
 
 ## **Description**
-* CL application that assists the User in building a professional README.md file for their project.
+CL Application that assists the user in creating a professional README file for their repository.
 
-## Table of Contents
+## **Table of Contents**
 
 * Installation(#installation)
 * Usage(#usage)
 * Credits(#credits)
 * License(#license)
+* Contributors
+* Contact Information
 
-## Installation
-* npm init -y / npm i inquirer
+## **Installation**
+```
+npm i
+```
 
-## Usage
-* undefined
+## **Usage**
+Open the command line / close directory to local client / cd into the directory where index.js is located / run the following command npm i to install dependencies
 
-## ScreenShot
-undefined
+## **ScreenShot**
+![Screenshot of Application](../assets/images/DOM-diagram.png)
 
-## Licence
+## **Licence**
+![License: MIT](https://img.shields.io/badge/License-MIT-hotpink.svg)
 
-## Contributing
+## **Contributors**
+Sam Sweigart
 
-## Tests
+## **Tests**
 
-## Questions
+## **Questions**
 
-If you would like to contribute to the project please contact me @ 
+If you would like to contribute to the project please contact me below: 
 * [GitHub](https://github.com/gamgee-em)
-* [Email](mailto:samsweigart@hotmail.com)
+* [Email](mailto:samuel.sweigart@gmail.com)
+
+## **Demo**
+
