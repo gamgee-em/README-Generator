@@ -3,8 +3,9 @@ const { Console } = require('console');
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
+const { url } = require('inspector');
+const { type } = require('os');
 const { title } = require('process');
-//const mitLicense = ``;
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -20,6 +21,11 @@ const questions = [
     },
     {
         type: 'input',
+        message: 'Please list any dendencies your application may have:',
+        name: 'dependencies'
+    },
+    {
+        type: 'input',
         message: 'Please list the installation commands:',
         name: 'installation'
     },
@@ -32,6 +38,26 @@ const questions = [
         type: 'input',
         message: 'Please enter file path to image to display Screenshot of application:',
         name: 'image'
+    },
+    {
+        type: 'input',
+        message: 'Please enter the year of copyright:',
+        name: 'copyright_year'
+    },
+    {
+        type: 'input',
+        message: 'Please enter the name of the copyright holder:',
+        name: 'copyright_holder'
+    },
+    {
+        type: 'input',
+        message: 'Please enter the type of license use for your project',
+        name: 'license_type'
+    },
+    {
+        type: 'input',
+        message: 'Please provide your licence badge URL?',
+        name: 'license_url'
     },
     {
         type: 'input',
@@ -53,7 +79,6 @@ const questions = [
 const getAnswers = (answers) => {
     inquirer.prompt(questions, answers)
         .then((response) => {
-            //writeToFile(response);
             renderMarkUp(response);
     });
 };
@@ -61,62 +86,72 @@ const getAnswers = (answers) => {
 
 
 const renderMarkUp = (response) => {
-const markUp = `
-# **${response.projectTitle}**
+const markUp = 
+`# __${response.projectTitle}__
 
-## **Description**
+## __Description__
 ${response.description}
 
-## **Table of Contents**
+## __Table of Contents__
 
-* Installation(#installation)
-* Usage(#usage)
-* Credits(#credits)
-* License(#license)
-* Contributors
-* Contact Information
+* [Dependencies](#dependencies)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Tests](#tests)
+* [ScreenShot](#screenshot)
+* [License](#license)
+* [Badges](#badges)
+* [Contributors](#contributors)
+* [Contact Information](#questions)
+* [Demo](#demo)
 
-## **Installation**
+## __Dependencies__
+
+## __Tests__
+
+## __Installation__
 \`\`\`
 ${response.installation}
 \`\`\`
 
-## **Usage**
-${response.usage}
+## __Usage__
+    ${response.usage}
 
-## **ScreenShot**
+## __ScreenShot__
 ![Screenshot of Application](${response.image})
 
-## **Licence**
-![License: MIT](https://img.shields.io/badge/License-MIT-hotpink.svg)
+## __License__
+__Copyright ${response.copyright_year} ${response.copyright_holder}__
 
-## **Contributors**
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## __Badges__
+![License: ${response.license_type}](${response.license_url})
+
+## __Contributors__
 ${response.contributors}
 
-## **Tests**
-
-## **Questions**
-
+## __Questions / Contact__
 If you would like to contribute to the project please contact me below: 
 * [GitHub](https://github.com/${response.github})
-* [Email](mailto:${response.email})
+* [E-mail](mailto:${response.email})
 
-## **Demo**
+## __Demo__
+![Application Demo](link to image / GIF)`
 
-` 
-writeToFile(markUp);
+ 
+    writeToFile(markUp);
 };
 
 const writeToFile = (markUp) => {
     fs.writeFile('README.md', markUp.toString(), (err) => {
-        if (err) {
-            console.error(err)
-        } else {
-            console.log(`File Written!`);
-        }
+        err ? console.log(err) : console.log('File Written!')
     });
 }
-
 
 // Function call to initialize app
 // TODO: Create a function to initialize app
