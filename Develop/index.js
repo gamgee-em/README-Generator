@@ -34,13 +34,8 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Provide a breif explaination of your applications usage:',
+        message: 'Provide a brief explaination of your applications usage:',
         name: 'usage'
-    },
-    {
-        type: 'input',
-        message: 'Enter the file path to image to display Screenshot of application:',
-        name: 'image'
     },
     {
         type: 'input',
@@ -61,6 +56,11 @@ const questions = [
         type: 'input',
         message: 'Provide your licence badge URL?',
         name: 'license_url'
+    },
+    {
+        type: 'input',
+        message: 'Enter the file path to image to display Screenshot of application:',
+        name: 'image'
     },
     {
         type: 'input',
@@ -117,9 +117,6 @@ ${response.tests}
 ## __Usage__
 ${response.usage}
 
-## __ScreenShot__
-![Screenshot of Application](${response.image})
-
 ## __License__
 __Copyright ${response.copyright_year} ${response.copyright_holder}__
 
@@ -131,6 +128,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## __Badges__
 ![License: ${response.license_type}](${response.license_url})
+
+## __ScreenShot__
+![Screenshot of Application](${response.image})
 
 ## __Contributors__
 ${response.contributors}

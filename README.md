@@ -27,9 +27,6 @@ No tests provided
 ## __Usage__
 Open the CL / clone directory to local client / cd into the cirectory where index.js is located / run the following command 'npm i' to install dependencies followed by 'node index.js' to launch application
 
-## __ScreenShot__
-![Screenshot of Application](./assets/images/DOM-diagram.png)
-
 ## __License__
 __Copyright 2021 Sam Sweigart__
 
@@ -40,7 +37,10 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## __Badges__
-![License: MIT](https://img.shields.io/badge/License-MIT-hotpink.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-hotpink.svg))
+
+## __ScreenShot__
+![Screenshot of Application](./assets/images/readme-generator-ss.png)
 
 ## __Contributors__
 Sam Sweigart
