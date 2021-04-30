@@ -19,16 +19,16 @@ CL Application that assists the user in creating a professional README file for 
 node.js / npm / npm inquirer package
 
 ## __Tests__
-undefined
+No tests provided
 
 ## __Installation__
     npm i
 
 ## __Usage__
-Open the command line / clone directory to local client / cd into the directory where index.js is located / run the following command 'npm i' to install dependencies followed by 'node index.js' to launch application
+Open the CL / clone directory to local client / cd into the cirectory where index.js is located / run the following command 'npm i' to install dependencies followed by 'node index.js' to launch application
 
 ## __ScreenShot__
-![Screenshot of Application](../assets/images/DOM-diagram.png)
+![Screenshot of Application](./assets/images/DOM-diagram.png)
 
 ## __License__
 __Copyright 2021 Sam Sweigart__

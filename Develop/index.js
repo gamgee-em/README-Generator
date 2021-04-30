@@ -9,57 +9,62 @@ const { title } = require('process');
 const questions = [
     {
         type: 'input',
-        message: 'What is the Title of your Project? ',
+        message: 'What is the Title of your Application/Project? ',
         name: 'projectTitle'
     },
     {
         type: 'input',
-        message: 'Please provide a brief description of your project: ',
+        message: 'Provide a brief description of your application: ',
         name: 'description'
     },
     {
         type: 'input',
-        message: 'Please list any denpencies your application may have:',
+        message: 'List any dependencies your application may have:',
         name: 'dependencies'
     },
     {
         type: 'input',
-        message: 'Please list the installation commands:',
+        message: 'Provide a brief explaination of any tests you have written for your application:',
+        name: 'tests'
+    },
+    {
+        type: 'input',
+        message: 'List any installation commands needed to run your application:',
         name: 'installation'
     },
     {
         type: 'input',
-        message: 'Please explain the usage of your application:',
+        message: 'Provide a breif explaination of your applications usage:',
         name: 'usage'
     },
     {
         type: 'input',
-        message: 'Please enter file path to image to display Screenshot of application:',
+        message: 'Enter the file path to image to display Screenshot of application:',
         name: 'image'
     },
     {
         type: 'input',
-        message: 'Please enter the year of copyright:',
+        message: 'Enter the year of copyright:',
         name: 'copyright_year'
     },
     {
         type: 'input',
-        message: 'Please enter the name of the copyright holder:',
+        message: 'Enter the name of the copyright holder:',
         name: 'copyright_holder'
     },
     {
         type: 'input',
-        message: 'Please enter the type of license use for your project',
+        message: 'Enter the type of license used for your project:',
         name: 'license_type'
     },
     {
         type: 'input',
-        message: 'Please provide your licence badge URL?',
+        message: 'Provide your licence badge URL?',
         name: 'license_url'
     },
     {
         type: 'input',
-        message: 'Please list all contributors to the project:',
+        message: 'List all contributors to the project:',
         name: 'contributors'
     },
     {
