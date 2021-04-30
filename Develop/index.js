@@ -1,4 +1,3 @@
-console.log('js connected / node.js working')
 const { Console } = require('console');
 const fs = require('fs');
 const inquirer = require('inquirer');
@@ -81,9 +80,7 @@ const questions = [
 
 const getAnswers = (answers) => {
     inquirer.prompt(questions, answers)
-        .then((response) => {
-            renderMarkUp(response);
-    });
+        .then((response) => renderMarkUp(response));
 };
 
 const renderMarkUp = (response) => {
@@ -150,11 +147,9 @@ const writeToFile = (markUp) => {
     fs.writeFile('../README.md', markUp.toString(), (err) => {
         err ? console.log(err) : console.log('File Written!')
     });
-}
+};
 
 // Function call to initialize app
-function init() {
-    getAnswers();
-}
+const init = () => getAnswers();
 
 init();
