@@ -1,13 +1,11 @@
 console.log('js connected / node.js working')
 const { Console } = require('console');
-// TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
 const { url } = require('inspector');
 const { type } = require('os');
 const { title } = require('process');
 
-// TODO: Create an array of questions for user input
 const questions = [
     {
         type: 'input',
@@ -21,7 +19,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Please list any dendencies your application may have:',
+        message: 'Please list any denpencies your application may have:',
         name: 'dependencies'
     },
     {
@@ -83,8 +81,6 @@ const getAnswers = (answers) => {
     });
 };
 
-
-
 const renderMarkUp = (response) => {
 const markUp = 
 `# __${response.projectTitle}__
@@ -93,7 +89,6 @@ const markUp =
 ${response.description}
 
 ## __Table of Contents__
-
 * [Dependencies](#dependencies)
 * [Installation](#installation)
 * [Usage](#usage)
@@ -106,16 +101,16 @@ ${response.description}
 * [Demo](#demo)
 
 ## __Dependencies__
+${response.dependencies}
 
 ## __Tests__
+${response.tests}
 
 ## __Installation__
-\`\`\`
-${response.installation}
-\`\`\`
+    ${response.installation}
 
 ## __Usage__
-    ${response.usage}
+${response.usage}
 
 ## __ScreenShot__
 ![Screenshot of Application](${response.image})
@@ -135,7 +130,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## __Contributors__
 ${response.contributors}
 
-## __Questions / Contact__
+## __Questions__
 If you would like to contribute to the project please contact me below: 
 * [GitHub](https://github.com/${response.github})
 * [E-mail](mailto:${response.email})
@@ -143,18 +138,16 @@ If you would like to contribute to the project please contact me below:
 ## __Demo__
 ![Application Demo](link to image / GIF)`
 
- 
     writeToFile(markUp);
 };
 
 const writeToFile = (markUp) => {
-    fs.writeFile('README.md', markUp.toString(), (err) => {
+    fs.writeFile('../README.md', markUp.toString(), (err) => {
         err ? console.log(err) : console.log('File Written!')
     });
 }
 
 // Function call to initialize app
-// TODO: Create a function to initialize app
 function init() {
     getAnswers();
 }

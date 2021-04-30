@@ -4,7 +4,6 @@
 CL Application that assists the user in creating a professional README file for their repository.
 
 ## __Table of Contents__
-
 * [Dependencies](#dependencies)
 * [Installation](#installation)
 * [Usage](#usage)
@@ -17,16 +16,16 @@ CL Application that assists the user in creating a professional README file for 
 * [Demo](#demo)
 
 ## __Dependencies__
+node.js / npm / npm inquirer package
 
 ## __Tests__
+undefined
 
 ## __Installation__
-```
-npm i
-```
+    npm i
 
 ## __Usage__
-    Open the command line / clone directory to local client / cd into the directory where index.js is located / run the following command 'npm i' to install dependencies followed by 'node index.js' to launch application
+Open the command line / clone directory to local client / cd into the directory where index.js is located / run the following command 'npm i' to install dependencies followed by 'node index.js' to launch application
 
 ## __ScreenShot__
 ![Screenshot of Application](../assets/images/DOM-diagram.png)
@@ -41,12 +40,12 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## __Badges__
-![License: MIT](https://img.shields.io/packagist/l/?style=for-the-badge?License-MIT-hotpink.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-hotpink.svg)
 
 ## __Contributors__
 Sam Sweigart
 
-## __Questions / Contact__
+## __Questions__
 If you would like to contribute to the project please contact me below: 
 * [GitHub](https://github.com/gamgee-em)
 * [E-mail](mailto:samuel.sweigart@gmail.com)
