@@ -36,5 +36,6 @@ If you would like to contribute to the project please contact me below:
 * [GitHub](https://github.com/gamgee-em)
 * [E-mail](mailto:samuel.sweigart@gmail.com)
 ## __Demo__
-[Full Demo](https://drive.google.com/file/d/1A2Yai8ti3BTb7r1RTJy2KAtmZkBNKrGq/view?usp=sharing)
+[Click for Full Demo](https://drive.google.com/file/d/1A2Yai8ti3BTb7r1RTJy2KAtmZkBNKrGq/view?usp=sharing)
+
 ![Application Demo](./assets/gifs/readme-demo.gif)
