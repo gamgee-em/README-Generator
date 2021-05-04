@@ -15,7 +15,7 @@ CL Application that assists the user in creating a professional README file for 
 ## __Dependencies__
 node.js / npm / npm inquirer package
 ## __Tests__
-No tests provided
+No Tests Provided.
 ## __Installation__
   npm i
 ## __Usage__
@@ -36,6 +36,6 @@ If you would like to contribute to the project please contact me below:
 * [GitHub](https://github.com/gamgee-em)
 * [E-mail](mailto:samuel.sweigart@gmail.com)
 ## __Demo__
-[Click for Full Demo](https://drive.google.com/file/d/1A2Yai8ti3BTb7r1RTJy2KAtmZkBNKrGq/view?usp=sharing)
+[Click for Full Demo](https://drive.google.com/file/d/1_ypwQhcgD8-UCvAyvakUngjweQi1s9UW/view?usp=sharing)
 
 ![Application Demo](./assets/gifs/readme-demo.gif)
